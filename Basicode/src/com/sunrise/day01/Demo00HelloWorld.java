@@ -10,7 +10,7 @@ public class Demo00HelloWorld {
         Scanner sc = null;
         Scanner sc1 = null;
         for (int i = 0; i < 3; i++) {
-            System.out.println("循环次数=" + i);
+            System.out.println("循环次数==" + i);
         }
     }
     //打印到5行没行5个星号
