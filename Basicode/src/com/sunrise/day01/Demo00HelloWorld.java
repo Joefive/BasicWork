@@ -13,6 +13,7 @@ public class Demo00HelloWorld {
             System.out.println("循环次数=" + i);
         }
     }
+    //打印到5行没行5个星号
         public static void printMsg () {
             for (int j = 0; j < 5; j++) {
                 for (int k = 0; k < 5; k++) {
