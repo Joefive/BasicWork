@@ -64,12 +64,10 @@ public class Demo04Operator {
         System.out.println(j);
         /**
          * 三元运算符，三目运算
-         * int result = a>b?a:b 注意：a,b必须同时都是int类型
          */
-        int aa = 11;
-        int bb = 22;
-        int max = aa > bb ? aa : bb;
+        int aa=11;
+        int bb=22;
+        int max = aa>bb?aa:bb;
         System.out.println(max);
-
     }
 }
