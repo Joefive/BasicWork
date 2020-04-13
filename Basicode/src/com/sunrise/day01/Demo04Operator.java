@@ -64,7 +64,7 @@ public class Demo04Operator {
         System.out.println(3 < 1 && ++a < 100);
         System.out.println(j);
         /**
-         * 三元运算符，三目运算,条件是否成立？成立执行A：不成立执行B执行
+         * 三元运算符，三目运算,条件是否成立？成立执行A：不成立执行B执行.
          */
         int aa=11;
         int bb=22;
