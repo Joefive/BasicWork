@@ -13,7 +13,8 @@ public class Demo04Operator {
         System.out.println("a*b=" + (a * b));
         System.out.println("a/b=" + (a / b));
         System.out.println("a%b=" + (a % b));
-        /**"+"号String字符串连接使用+都会变成字符串拼接。
+        /**
+         * "+"号String字符串连接使用+都会变成字符串拼接。
          */
         String name = "java";
         System.out.println(name + 20);
@@ -69,5 +70,6 @@ public class Demo04Operator {
         int bb=22;
         int max = aa>bb?aa:bb;
         System.out.println(max);
+        System.out.println("max="+max);
     }
 }
