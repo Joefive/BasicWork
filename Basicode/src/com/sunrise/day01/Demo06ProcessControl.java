@@ -129,7 +129,7 @@ public class Demo06ProcessControl {
             }
         }
         System.out.println("count3=" + count3);
-
+        //使用while
         int count4 = 0;
         int wii = 0;
         while (wii <= 100) {
