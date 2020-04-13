@@ -66,8 +66,8 @@ public class Demo04Operator {
         /**
          * 三元运算符，三目运算,条件是否成立？成立执行A：不成立执行B执行.
          */
-        int aa=11;
-        int bb=22;
+        int aa=13;
+        int bb=26;
         int max = aa>bb?aa:bb;
         System.out.println(max);
         System.out.println("max="+max);
