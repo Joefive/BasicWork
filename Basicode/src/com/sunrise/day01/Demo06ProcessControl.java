@@ -109,14 +109,16 @@ public class Demo06ProcessControl {
 
         /**
          * do...while循环
+         * do...while循环中循环体至少会执行一次
          */
         int count2 = 0;
         int di = 0;
         do {
-            count2 += di;
+            count2 += di; //至少执行一次
             di++;
         } while (di <= 100);
         System.out.println("count2=" + count2);
+        System.out.println("di=" + di);
 
         /**
          *求0~100以内的偶数之和
@@ -139,5 +141,34 @@ public class Demo06ProcessControl {
             wii++;
         }
         System.out.println("count4=" + count4);
+
+        /**
+         * break也可以在其他循环中使用
+         * continue跳过当前内容，进行下一次
+         */
+        for (int i = 0; i < 5; i++) {
+            if (i == 3) {
+                break;
+            }
+            System.out.println("hello" + i);
+        }
+
+        for (int i = 0; i < 5; i++) {
+            if (i == 2) {
+                continue;
+            }
+            System.out.println("循环第" + i + "次！");
+        }
+
+        /**
+         * 嵌套循环9*9
+         */
+
+        for(int i=1;i<=9;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(i+"X"+j+"="+i*j+" ");
+            }
+            System.out.println();
+        }
     }
 }
