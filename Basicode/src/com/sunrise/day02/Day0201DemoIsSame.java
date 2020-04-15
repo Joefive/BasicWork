@@ -36,6 +36,10 @@ public class Day0201DemoIsSame {
         return sum;
     }
 
+    /**
+     * 制定方法打印输出几次
+     * @param a
+     */
     public static void printHello(int a) {
         for (int i = 0; i < a; i++) {
             System.out.println("hello..world!");
