@@ -7,7 +7,7 @@ package com.sunrise.day02;
  * 返回值：return,返回值要和方法类型相同
  */
 
-public class Day02DemoMethod {
+public class Day0201DemoMethod {
     public static void main(String[] args) {
         printMethod();  //单独调用
         System.out.println(sum(1, 2)); //打印调用

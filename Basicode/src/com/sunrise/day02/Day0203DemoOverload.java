@@ -7,7 +7,7 @@ package com.sunrise.day02;
  * 与参数名称、方法返回值类型无关。
  */
 
-public class Day02DemoOverload {
+public class Day0203DemoOverload {
     public static void main(String[] args) {
         System.out.println(sum(1, 2));
         System.out.println(sum(1, 2, 3, 4));
