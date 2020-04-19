@@ -47,10 +47,15 @@ public class Day0204DemoArray {
         /**
          * 数据越界：查找没有下标的数据
          * ArrayIndexOutOfBoundsException
+         * 空指针：没有new出来的东西进行了访问
+         * java.lang.NullPointerException
          */
+        int[] arrError = null;
         //System.out.println(arrayD[5]);
+        //System.out.println(arrError[0]);
+
         int[] numArray = new int[]{1, 2, 3};
-        int[] numArray1 = {9, 12, 3, 1, 22};
+        int[] numArray1 = {12, 9, 3, 1, 22};
 
         int numArray2[] = new int[3];
         int[] numArray3 = new int[3];
@@ -77,9 +82,19 @@ public class Day0204DemoArray {
             System.out.println(num);
         }
 
+        //调用排序方法>调用打印方法>调用最大值方法
         bubbleSort(numArray1);
+        System.out.println("======================");
         printArray(numArray1);
-
+        System.out.println("======================");
+        System.out.println("max=" + maxArray(numArray1));
+        System.out.println("**********************");
+        //printArray(reverseArray(numArray1));
+        System.out.println(Arrays.toString(reverseArray(numArray1)));
+        System.out.println("**********************");
+        int[] result = calculateArray(1, 3, 5);
+        System.out.println("求和=" + result[0]);
+        System.out.println("品均值=" + result[1]);
     }
 
     /**
@@ -100,15 +115,66 @@ public class Day0204DemoArray {
         }
     }
 
+    /**
+     * 封装打印数组方法
+     *
+     * @param arr
+     */
     public static void printArray(int[] arr) {
-        System.out.print("[" + Arrays.toString(arr) + "]=[");
+        System.out.print("[");
         for (int i = 0; i < arr.length; i++) {
             if (i != arr.length - 1) {
                 System.out.print(arr[i] + ",");
             } else {
-                System.out.print(arr[i] + "]");
+                System.out.print(arr[i] + "]" + "\n");
             }
         }
     }
+
+    /**
+     * 封装数组查询最大值方法
+     *
+     * @param arr
+     * @return
+     */
+    public static int maxArray(int[] arr) {
+        int max = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        return max;
+    }
+
+    /**
+     * 数组元素反转
+     *
+     * @return
+     */
+    public static int[] reverseArray(int[] arr) {
+        for (int min = 0, max = arr.length - 1; min < max; min++, max--) {
+            int temp = arr[min];
+            arr[min] = arr[max];
+            arr[max] = temp;
+        }
+        return arr;
+    }
+
+    /**
+     * 返回值为数组，计算3个数的和与平均数
+     *
+     * @param a
+     * @param b
+     * @param c
+     * @return arr[0]=sum,arr[1]=avg
+     */
+    public static int[] calculateArray(int a, int b, int c) {
+        int sum = a + b + c;
+        int avg = sum / 3;
+        int[] arr = {sum, avg};
+        return arr;
+    }
+
 }
 
