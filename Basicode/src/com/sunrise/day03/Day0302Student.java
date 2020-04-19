@@ -11,10 +11,12 @@ public class Day0302Student {
     public void eat() {
         System.out.println("我会吃饭...!");
     }
-    public void study(){
+
+    public void study() {
         System.out.println("我会学习...!");
     }
-    public void sleep(){
+
+    public void sleep() {
         System.out.println("我会睡觉...!");
     }
 }
