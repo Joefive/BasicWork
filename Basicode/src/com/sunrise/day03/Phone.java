@@ -1,6 +1,6 @@
 package com.sunrise.day03;
 
-public class Day0303Phone {
+public class Phone {
     String brand;
     double price;
     String color;

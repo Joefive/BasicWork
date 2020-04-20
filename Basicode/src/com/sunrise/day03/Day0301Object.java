@@ -31,7 +31,7 @@ public class Day0301Object {
  * 5.stack对成员方法进行调用(成员方法进栈)，调用完成后弹栈，自动销毁；
  * 6.执行到程序最后，main方法弹栈，销毁。
  */
-        Day0303Phone iPhone = new Day0303Phone();
+        Phone iPhone = new Phone();
         iPhone.brand = "苹果";
         iPhone.color = "土豪金";
         iPhone.price = 9999.0;
