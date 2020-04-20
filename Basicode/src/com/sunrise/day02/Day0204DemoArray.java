@@ -1,6 +1,7 @@
 package com.sunrise.day02;
 
 import java.util.Arrays;
+
 import com.sunrise.util.Util;
 
 /**
@@ -89,7 +90,8 @@ public class Day0204DemoArray {
         System.out.println("======================");
         ut.printArray(numArray1);
         System.out.println("======================");
-        System.out.println("max=" + ut.maxArray(numArray1));
+        int max = ut.maxArray(numArray1);
+        System.out.println("max=" + max);
         System.out.println("**********************");
         //printArray(reverseArray(numArray1));
         System.out.println(Arrays.toString(ut.reverseArray(numArray1)));
@@ -98,9 +100,6 @@ public class Day0204DemoArray {
         System.out.println("求和=" + result[0]);
         System.out.println("品均值=" + result[1]);
     }
-
-
-
 
 
 }
