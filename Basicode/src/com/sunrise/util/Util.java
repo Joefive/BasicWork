@@ -79,7 +79,10 @@ public class Util {
     public static int[] calculateArray(int a, int b, int c) {
         int sum = a + b + c;
         int avg = sum / 3;
-        int[] arr = {sum, avg};
+        //int[] arr = {sum, avg};
+         int[] arr = new int[2];
+         arr[0]=sum;
+         arr[1]=avg;
         return arr;
     }
 
