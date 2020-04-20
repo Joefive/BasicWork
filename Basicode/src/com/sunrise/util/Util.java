@@ -28,7 +28,7 @@ public class Util {
      * @param arr
      */
     public static void printArray(int[] arr) {
-        System.out.print("[arr]=[");
+        System.out.print("[");
         for (int i = 0; i < arr.length; i++) {
             if (i != arr.length - 1) {
                 System.out.print(arr[i] + ",");
@@ -52,6 +52,35 @@ public class Util {
             }
         }
         return max;
+    }
+
+    /**
+     * 数组元素反转
+     *
+     * @return
+     */
+    public static int[] reverseArray(int[] arr) {
+        for (int min = 0, max = arr.length - 1; min < max; min++, max--) {
+            int temp = arr[min];
+            arr[min] = arr[max];
+            arr[max] = temp;
+        }
+        return arr;
+    }
+
+    /**
+     * 返回值为数组，计算3个数的和与平均数
+     *
+     * @param a
+     * @param b
+     * @param c
+     * @return arr[0]=sum,arr[1]=avg
+     */
+    public static int[] calculateArray(int a, int b, int c) {
+        int sum = a + b + c;
+        int avg = sum / 3;
+        int[] arr = {sum, avg};
+        return arr;
     }
 
 }
