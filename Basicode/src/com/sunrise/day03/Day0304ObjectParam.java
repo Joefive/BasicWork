@@ -16,6 +16,7 @@ public class Day0304ObjectParam {
         method(one);
 
         Phone three = getPhone();
+        System.out.println(three);
         System.out.println(three.color);
         System.out.println(three.price);
         System.out.println(three.brand);
