@@ -16,6 +16,15 @@ public class Demo01Scanner {
         System.out.println("输入的数字：" + i);
         String str = sc.next();
         System.out.println("输入的字符串" + str);
+
+        Scanner sc1 = new Scanner(System.in);
+        System.out.println("输入第一个数：");
+        int a = sc1.nextInt();
+        System.out.println("输入第二个数：");
+        int b = sc1.nextInt();
+        int result = a + b;
+        System.out.println("数字和="+result);
+
     }
 
 }
