@@ -19,8 +19,6 @@ public class Person {
         } else {
             System.out.println("年龄设置不合适！");
         }
-
-
     }
 
     public int getAge() {
