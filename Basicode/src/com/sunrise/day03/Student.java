@@ -1,7 +1,7 @@
 package com.sunrise.day03;
 
 /**
- *一个标准的Java Bean:1.使用private修饰符的成员变量；2.有参数、无参数构造方法；3.getXxx，setXxx方法；
+ * 一个标准的Java Bean:1.使用private修饰符的成员变量；2.有参数、无参数构造方法；3.getXxx，setXxx方法；
  */
 
 public class Student {
@@ -41,11 +41,11 @@ public class Student {
      * 4.所有类都有构造方法，没变编写会默认创建一个构造方法；
      * 5.构造发放可以进行重载；
      */
-    public Student(){
+    public Student() {
         System.out.println("Student无参数构造方法执行...!");
     }
 
-    public Student(String name,int age){
+    public Student(String name, int age) {
         System.out.println("Student有参数构造方法执行...!");
         this.name = name;
         this.age = age;
