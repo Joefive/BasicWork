@@ -13,17 +13,18 @@ import java.util.ArrayList;
 public class Demo05ArrayObject {
     public static void main(String[] args) {
         Person[] arr = new Person[3];
-        Person one = new Person("张一",18);
-        Person two = new Person("张二",19);
-        Person three = new Person("张三",20);
-        arr[0]=one;
-        arr[1]=two;
-        arr[2]=three;
+        Person one = new Person("张一", 18);
+        Person two = new Person("张二", 19);
+        Person three = new Person("张三", 20);
+        arr[0] = one;
+        arr[1] = two;
+        arr[2] = three;
         System.out.println(arr[1]);
         System.out.println(arr[1].getName());
 
-        //数组集合元素
-        //JDK1.7以后可以省略后面<>中的String
+        /**数组集合元素
+         *JDK1.7以后可以省略后面<>中的String
+         */
         ArrayList<String> list = new ArrayList<>();
         System.out.println(list);
         list.add("刘一");
