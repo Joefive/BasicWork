@@ -23,7 +23,16 @@ public class Demo01Scanner {
         System.out.println("输入第二个数：");
         int b = sc1.nextInt();
         int result = a + b;
-        System.out.println("数字和="+result);
+        System.out.println("数字和=" + result);
+
+        Scanner sc2 = new Scanner(System.in);
+        int num1 = sc2.nextInt();
+        int num2 = sc2.nextInt();
+        int max = num1 > num2 ? num1 : num2;
+        int num3 = sc2.nextInt();
+        max = max > num3 ? max : num3;
+        System.out.println("最大值："+max);
+
 
     }
 
