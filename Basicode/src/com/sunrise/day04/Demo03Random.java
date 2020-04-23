@@ -34,7 +34,7 @@ public class Demo03Random {
     }
 
     /**
-     * 生成n个随机数字
+     * 生成n个10以内的随机数字
      */
     public static String num2Random(int l) {
         Random r = new Random();
