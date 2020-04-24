@@ -1,7 +1,11 @@
 package com.sunrise.util;
 
+import java.util.ArrayList;
+
 /**
  * 工具类
+ * 定义一个方法三要素：
+ * 1.返回值；2.方法名称；3.参数列表。
  */
 public class Util {
     /**
@@ -80,10 +84,25 @@ public class Util {
         int sum = a + b + c;
         int avg = sum / 3;
         //int[] arr = {sum, avg};
-         int[] arr = new int[2];
-         arr[0]=sum;
-         arr[1]=avg;
+        int[] arr = new int[2];
+        arr[0] = sum;
+        arr[1] = avg;
         return arr;
+    }
+
+    /**
+     * 打印ArrayList方法
+     * @param list
+     */
+    public static void printArrayList(ArrayList<String> list) {
+        System.out.print("{");
+        for (int i = 0; i < list.size(); i++) {
+            if (i == list.size() - 1) {
+                System.out.print(list.get(i) + "}");
+            } else {
+                System.out.print(list.get(i) + "@");
+            }
+        }
     }
 
 }
