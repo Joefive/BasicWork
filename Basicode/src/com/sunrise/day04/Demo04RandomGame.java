@@ -8,6 +8,7 @@ public class Demo04RandomGame {
         Random r = new Random();
         int numRandom = r.nextInt(100) + 1;
         Scanner sc = new Scanner(System.in);
+        //在不知道循环多少次的情况下使用while循环
 //        while (true) {
 //            int inputRandom = sc.nextInt();
 //            if (inputRandom > numRandom) {
@@ -19,6 +20,7 @@ public class Demo04RandomGame {
 //                break;
 //            }
 //        }
+        //使用for循环进行规定输入次数为6次
         for (int i = 0; i < 6; i++) {
             int inputRandom = sc.nextInt();
             if (inputRandom > numRandom) {
