@@ -105,4 +105,28 @@ public class Util {
         }
     }
 
+    /**
+     * 输入一个字符串判断其中多少个大写、小写字母，数字，及其他字符
+     * @param str
+     */
+    public static void countKind(String str) {
+        int coutUpper = 0;
+        int coutLower = 0;
+        int coutNum = 0;
+        int coutOther = 0;
+        char[] chars = str.toCharArray();
+        for (int i = 0; i < chars.length; i++) {
+            if (chars[i] >= 'A' && chars[i] <= 'Z') {
+                coutUpper++;
+            } else if (chars[i] >= 'a' && chars[i] <= 'z') {
+                coutLower++;
+            } else if (chars[i] >= '0' && chars[i] <= '9') {
+                coutNum++;
+            } else {
+                coutOther++;
+            }
+        }
+        System.out.println("大写：" + coutUpper + "个，小写:" + coutLower + "个，数字:" + coutNum + "个，其他:" + coutOther + "个。");
+    }
+
 }
