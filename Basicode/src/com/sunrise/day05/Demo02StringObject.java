@@ -10,7 +10,6 @@ import com.sunrise.util.Util;
  */
 public class Demo02StringObject {
     public static void main(String[] args) {
-        Util ut = new Util();
         String str1 = "Hello";
         String str2 = "Hello";
         char[] charArray = {'H', 'e', 'l', 'l', 'o'};
@@ -87,7 +86,7 @@ public class Demo02StringObject {
         //练习2：输入一个字符串判断其中大写、小写字母、数字，其他字符
         Scanner sc = new Scanner(System.in);
         String inputString = sc.next();
-        ut.countKind(inputString);
+        Util.countKind(inputString);
 
     }
 
