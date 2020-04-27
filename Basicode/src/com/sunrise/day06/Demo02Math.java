@@ -43,7 +43,6 @@ public class Demo02Math {
             }
         }
         String str = intArray.toString();
-        System.out.println("大于6或小于2.1区间总共有" + count + "个数字："+str);
-
+        System.out.println("大于6或小于2.1区间总共有" + count + "个数字：" + str);
     }
 }
