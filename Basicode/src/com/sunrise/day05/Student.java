@@ -17,6 +17,10 @@ public class Student {
         this.id = ++idCount;
     }
 
+    static{
+        System.out.println("静态代码块，仅执行一次，在第一次实例化，静态代码块优先执行放入静态池中！");
+    }
+
     public int getId() {
         return id;
     }
