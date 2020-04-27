@@ -59,12 +59,11 @@ public class Demo06ArrayListForEach {
         }
 
         //调用打印方法进行打印字符串集合
-        Util ut = new Util();
         ArrayList<String> str = new ArrayList<>();
         str.add("一号");
         str.add("二号");
         str.add("三号");
-        ut.printArrayList(str);
+        Util.printArrayList(str);
 
     }
 }
