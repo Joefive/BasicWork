@@ -129,4 +129,19 @@ public class Util {
         System.out.println("大写：" + coutUpper + "个，小写:" + coutLower + "个，数字:" + coutNum + "个，其他:" + coutOther + "个。");
     }
 
+    /**
+     * 反序排列arrayList<String>
+     * @param numArray
+     */
+    public static void resverArrayList(ArrayList<Integer> numArray){
+        System.out.print("[");
+        for (int i = numArray.size()-1; i >= 0; i--) {
+            if (i == 0) {
+                System.out.print(numArray.get(i)+"]");
+            } else {
+                System.out.print(numArray.get(i)+", ");
+            }
+        }
+    }
+
 }
