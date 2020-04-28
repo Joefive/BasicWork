@@ -31,9 +31,12 @@ public class Demo03Inherit {
         //方法重写override:方法名称相同，参数列表也相同，方法覆盖，方法覆写
         //方法重载overload:方法名称相同，参数列表不相同
         tc.method();
+        System.out.println("================");
 
-
-
+        //抽象类
+        Demo06AbstractInherit ai = new Demo06AbstractInherit();
+        ai.method();
+        ai.normalMethod();
 
     }
 }
