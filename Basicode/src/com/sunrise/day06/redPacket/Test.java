@@ -54,6 +54,12 @@ public class Test {
         }
         System.out.println("==============");
 
+        for (int i = 0; i < 10; i++) {
+            for (int y = 1; y <= i; y++) {
+                System.out.print(i + "*" + y + "=" + i * y +" ");
+            }
+            System.out.println();
+        }
 
     }
 }
