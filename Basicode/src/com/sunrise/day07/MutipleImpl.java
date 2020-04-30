@@ -6,7 +6,7 @@ public class MutipleImpl implements MultipleExtends {
     public void multipleMethod() {
 
     }
-    //重写的
+    //重写default方法
     @Override
     public void methodDefaultB() {
 
