@@ -6,4 +6,8 @@ package com.sunrise.day07;
  */
 public interface ConstInterface {
     public static final int NUM_OF = 10;
+
+    public default void methodDefaultB() {
+        System.out.println("ConstInterface的默认方法执行了。");
+    }
 }

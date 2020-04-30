@@ -16,4 +16,8 @@ public interface NewInterface {
 
     void methodAbs4();
 
+    public default void methodDefaultB() {
+        System.out.println("default");
+    }
+
 }

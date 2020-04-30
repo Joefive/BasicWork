@@ -17,5 +17,14 @@ public class Demo01Interface {
         System.out.println("=================");
 
         System.out.println(ConstInterface.NUM_OF);
+        System.out.println("=================");
+
+        //继承父类的方法优先于实现接口的方法
+        MultipleInterface mu = new MultipleInterface();
+        mu.methodDefaultB();
+        mu.methodDefault();
+        System.out.println("=================");
+
+
     }
 }
