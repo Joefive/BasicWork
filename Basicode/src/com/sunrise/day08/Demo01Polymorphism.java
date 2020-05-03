@@ -10,7 +10,7 @@ package com.sunrise.day08;
  * 调用成员方法：
  * 【编译看左边，运行看右边】：1.有没有方法先看左边，2.运行看右边如果有使用右边没有向上找
  */
-public class Polymorphism {
+public class Demo01Polymorphism {
     public static void main(String[] args) {
         Father fa = new Son();
         fa.method();
@@ -23,9 +23,16 @@ public class Polymorphism {
         //编译看左运行看右
         fa.show();
 
-        //对象向上转型一定是安全的
+        //对象向上转型一定是安全的，狗向上转型成了动物，就是多态写法
         Animal an = new Dog();
         an.eat();
+        //向下转型,向下转型必须要可追溯的，不可追溯会转型失败
+        Dog dog = (Dog) an;
+        dog.catchMouse();
+        int num = (int)10.555555;
+        int num1 = (int)0.555555;
+        System.out.println(num1);
+
     }
 
 }
