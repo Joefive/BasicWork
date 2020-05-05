@@ -27,7 +27,11 @@ public class Demo04AnonymousInner {
         my.methodA();
         my.methodB();
         System.out.println("===================");
-        //匿名内部类，匿名对象
+
+        /**
+         * 匿名内部类，匿名对象
+         */
+
         new MyInterface() {
             @Override
             public void methodA() {
