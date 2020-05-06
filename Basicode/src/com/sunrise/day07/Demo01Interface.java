@@ -25,6 +25,10 @@ public class Demo01Interface {
         mu.methodDefault();
         System.out.println("=================");
 
+        //多态的写法
+        NewInterface new1 = new ImplementsInterface();
+        new1.methodAbs();
+
 
     }
 }
