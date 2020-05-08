@@ -4,7 +4,8 @@ import java.util.Objects;
 
 /**
  * JDK7中新加入的工具类
- * Objects可以过滤掉空指针异常，使用为空的值进行比较
+ * Objects.equals可以过滤掉空指针异常，使用为空的值进行比较
+ * 源码如下：
  * public static boolean equals(Object a, Object b) {
  * return (a == b) || (a != null && a.equals(b));
  * }

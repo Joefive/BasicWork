@@ -12,6 +12,14 @@ public class Person {
     }
 
     @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         //使用反射技术进行判断

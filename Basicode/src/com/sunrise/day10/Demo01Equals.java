@@ -4,7 +4,7 @@ package com.sunrise.day10;
 import java.util.ArrayList;
 
 /**
- * equals方法：对于基本类型比较的是数值，如果是引用那类型比较对象的地址
+ * equals方法：对于基本类型比较的是数值，如果是引用类型比较对象的地址
  */
 public class Demo01Equals {
     public static void main(String[] args) {
@@ -22,6 +22,10 @@ public class Demo01Equals {
         list.add("19");
         System.out.println("【3】p比对p2：" + p.equals(p2));
         System.out.println("【4】p比对list：" + p.equals(list));
+        System.out.println("===================");
+        //重写了toString方法
+        String s = p.toString();
+        System.out.println(s);
 
 
     }

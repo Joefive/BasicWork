@@ -37,6 +37,7 @@ public class Demo04DataFormat {
      * 将字符串转换成日期类型：
      * 1.创建SimpleFormatData对象，制定字符串格式；
      * 2.调用parse方法将字符串解析成日期类型
+     * exception：调用parse方法时可以做为异常ParseException抛出，也可以try catch进行捕捉异常进行处理
      */
     private static void demo02() throws ParseException {
         SimpleDateFormat sd = new SimpleDateFormat("yyyy-MM-dd");
