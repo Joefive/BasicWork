@@ -24,5 +24,25 @@ public class Demo02Objects {
         int num1 = 10;
         System.out.println(s1.equals(s2));
 
+        double total = 100D;
+        double cost = 0D;
+        double avg = 0D;
+        System.out.println(avg);
+
+        /**
+         * Java中任何正数除以0(int)，报错；
+         * 除以0.0(浮点型)，为无穷大Infinity
+         * NaN定义：public static final double NaN = 0.0d / 0.0
+         */
+
+        if (Objects.equals(cost, 0.0)) {
+            avg = total / cost;
+            System.out.println("=====");
+        }
+        System.out.println(avg);
+        System.out.println(100.0 / 0);
+        System.out.println(0.0 / 0);
+        System.out.println(0.0 / 0.0);
+
     }
 }

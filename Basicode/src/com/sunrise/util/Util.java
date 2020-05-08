@@ -1,6 +1,9 @@
 package com.sunrise.util;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  * 工具类
@@ -92,6 +95,7 @@ public class Util {
 
     /**
      * 打印ArrayList方法
+     *
      * @param list
      */
     public static void printArrayList(ArrayList<String> list) {
@@ -107,6 +111,7 @@ public class Util {
 
     /**
      * 输入一个字符串判断其中多少个大写、小写字母，数字，及其他字符
+     *
      * @param str
      */
     public static void countKind(String str) {
@@ -131,17 +136,46 @@ public class Util {
 
     /**
      * 反序排列arrayList<String>
+     *
      * @param numArray
      */
-    public static void resverArrayList(ArrayList<Integer> numArray){
+    public static void resverArrayList(ArrayList<Integer> numArray) {
         System.out.print("[");
-        for (int i = numArray.size()-1; i >= 0; i--) {
+        for (int i = numArray.size() - 1; i >= 0; i--) {
             if (i == 0) {
-                System.out.print(numArray.get(i)+"]");
+                System.out.print(numArray.get(i) + "]");
             } else {
-                System.out.print(numArray.get(i)+", ");
+                System.out.print(numArray.get(i) + ", ");
             }
         }
     }
+
+    /**
+     * 计算两个日期之间的相差的天数，获取字符串参数使用parse方法先转成Date类型，在使用getTime方法转成毫秒；
+     * 计算两个日期之间的毫秒差；
+     * @param d1
+     * @param d2
+     * @return
+     */
+    public static int BetweenDays(String d1, String d2){
+        SimpleDateFormat sd = new SimpleDateFormat("yyyy-MM-dd");
+        Long l = 0L;
+        Date date1 = null;
+        Date date2 = null;
+        try {
+            date1 = sd.parse(d1);
+            long time1 = date1.getTime();
+            date2 = sd.parse(d2);
+            long time2 = date2.getTime();
+            l = (time2 - time1) / (24 * 60 * 60 * 1000);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        //intValue()方法在必须是L是引用类型得情况下使用
+        return l.intValue();
+    }
+
+
+
 
 }
