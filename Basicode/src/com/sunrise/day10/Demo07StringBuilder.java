@@ -1,6 +1,5 @@
 package com.sunrise.day10;
 
-
 /**
  * String类字符串是常量，不能更改，进入常量池中；
  * private final char value[];底层实际是byte value[]数组；
@@ -12,6 +11,7 @@ package com.sunrise.day10;
  * 1.append：插入任意类型数据的字符串，并返回当前本身；
  * 2.insert：从下标开始插入元素(整数，字符串，浮点...任意类型)；
  */
+
 public class Demo07StringBuilder {
     public static void main(String[] args) {
         String str1 = "张三";
