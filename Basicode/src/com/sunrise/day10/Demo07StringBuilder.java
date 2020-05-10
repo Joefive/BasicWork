@@ -10,7 +10,7 @@ package com.sunrise.day10;
  * 构造方法：1.无参构造，创建一个空字符串；2.有参构造，创建一个字符串；
  * 成员方法：
  * 1.append：插入任意类型数据的字符串，并返回当前本身；
- * 2.insert：
+ * 2.insert：从下标开始插入元素(整数，字符串，浮点...任意类型)；
  */
 public class Demo07StringBuilder {
     public static void main(String[] args) {
@@ -45,5 +45,21 @@ public class Demo07StringBuilder {
         String s2 = rs3.toString();
         System.out.println("s2:"+s2);
         System.out.println(s1==s2);
+        System.out.println("==================");
+
+        /**
+         *delete，insert方法都是从下标开始删除或插入
+         */
+        StringBuilder rs4 = new StringBuilder("applePhone");
+        StringBuilder delete = rs4.delete(0, 1);
+        System.out.println(delete);
+
+        try {
+            rs4.insert(10,"QQ");
+            System.out.println(rs4);
+        }catch (Exception e){
+            System.out.println(e);
+        }
+
     }
 }
