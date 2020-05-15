@@ -1,13 +1,13 @@
 package com.sunrise.day12;
 
-public class Person extends Object implements Comparable<Person> {
+public class Man implements Comparable<Man>{
     private String name;
     private int age;
 
-    public Person() {
+    public Man() {
     }
 
-    public Person(String name, int age) {
+    public Man(String name, int age) {
         this.name = name;
         this.age = age;
     }
@@ -30,20 +30,14 @@ public class Person extends Object implements Comparable<Person> {
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "Man{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
     }
 
     @Override
-    public int hashCode() {
-        return super.hashCode();
-    }
-
-    @Override
-    public int compareTo(Person o) {
-        //return 0; //默认元素相同的，需要自定义规则
-        return this.age - o.age;
+    public int compareTo(Man o) {
+        return 0;
     }
 }
