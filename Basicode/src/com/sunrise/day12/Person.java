@@ -1,8 +1,49 @@
 package com.sunrise.day12;
 
-public class Person extends Object {
+public class Person extends Object implements Comparable<Person> {
+    private String name;
+    private int age;
+
+    public Person() {
+    }
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
+
     @Override
     public int hashCode() {
         return super.hashCode();
+    }
+
+    @Override
+    public int compareTo(Person o) {
+        //return 0; //默认元素相同的，需要自定义规则
+        return this.age - o.age;
     }
 }
