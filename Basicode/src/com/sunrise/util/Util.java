@@ -175,6 +175,19 @@ public class Util {
         return l.intValue();
     }
 
+    /**
+     * 计算(0~n)个数之和
+     * @param arr
+     * @return
+     */
+    public static int sumAny(int... arr) {
+        System.out.println(arr);
+        int sum = 0;
+        for (int i : arr) {
+            sum += i;
+        }
+        return sum;
+    }
 
 
 

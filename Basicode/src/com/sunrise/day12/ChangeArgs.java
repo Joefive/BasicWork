@@ -6,8 +6,7 @@ import com.sunrise.util.*;
  * 格式：修饰符 返回值类型 方法名(参数类型...行参数名){}
  * 参数底层实际是一个数组，根据传递参数的长度来创建不同长度的数组。
  * 注意：1.只能有一个可变参数，不能有多个可变参数；2.如果有多个参数，可变参数必须放在末尾；
- *      3.终极版本Object...obj
- */
+ *      3.终极版本Object...obj */
 public class ChangeArgs {
     public static void main(String[] args) {
         int sum = Util.sumAny(66, 33, 100, 300);
