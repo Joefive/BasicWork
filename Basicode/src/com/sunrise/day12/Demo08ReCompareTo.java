@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-/**
+/**Comparable与Comparator区别：
+ * Comparable接口：相当于this与参数比较，需要实现Comparable接口重写compareTo方法；
+ * Comparator接口：相当于找一个裁判进行比较两个人，需要实例化裁判这个对象，调用裁判的capare
  * 自己测试重写Comparator接口compare方法
  * 按照姓名跟年龄排序
  */
