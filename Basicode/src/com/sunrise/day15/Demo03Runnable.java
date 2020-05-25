@@ -13,7 +13,9 @@ package com.sunrise.day15;
 public class Demo03Runnable {
     public static void main(String[] args) {
         MyRunnable mr = new MyRunnable();
-        new Thread(mr).start();
+        //new Thread(mr).start();
+        Thread thread = new Thread(mr);
+        thread.start();
 
     }
 }
