@@ -18,4 +18,5 @@ public class Demo02Lambda {
 
         new Thread(()-> System.out.println(Thread.currentThread().getName()+"Lambda表达式生成代码【2】！")).start();
     }
+
 }
