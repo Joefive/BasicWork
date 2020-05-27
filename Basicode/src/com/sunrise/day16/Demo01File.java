@@ -19,12 +19,12 @@ public class Demo01File {
         System.out.println(separator);
         System.out.println("================");
         show01();
-        show02("//u01", "//test.sql");
+        show02("c:\\", "test.sql");
         show03();
     }
 
     private static void show01() {
-        File file = new File("c:\\text\\text\\a.txt");
+        File file = new File("//u01//soft//app//oracle//test.sql");
         System.out.println(file);
     }
 
