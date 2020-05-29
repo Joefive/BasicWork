@@ -15,14 +15,19 @@ public class Demo05RecursionSearch {
     public static void searchDoc(File dir) {
         System.out.println(dir);
         File[] files = dir.listFiles();
-        for (File f : files) {
-            if (f.isDirectory()) {
-                searchDoc(f);
-            } else {
-                if (f.getName().toLowerCase().endsWith(".doc")) {
-                    System.out.println(f);
+        try {
+            for (File f : files) {
+                if (f.isDirectory()) {
+                    searchDoc(f);
+                } else {
+                    if (f.getName().toLowerCase().endsWith(".doc")) {
+                        System.out.println(f);
+                    }
                 }
             }
+        } catch (NullPointerException e) {
+            System.out.println(e+"文件路径不存在！");
         }
+
     }
 }
