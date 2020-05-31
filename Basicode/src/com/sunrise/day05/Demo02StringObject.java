@@ -1,6 +1,7 @@
 package com.sunrise.day05;
 
 import java.util.Scanner;
+
 import com.sunrise.util.Util;
 
 /**
@@ -42,13 +43,13 @@ public class Demo02StringObject {
          * 6.public String substring (int begin,int end):返回从begin开始到end结尾的数据。[)左闭右开，包含左边，不包含右边
          */
         String str6 = str1.substring(1);
-        System.out.println(str6);
+        System.out.println("str6:" + str6);
         String str7 = str1.substring(1, 3); //"Hello"(1,3)从1号跟2号元素
-        System.out.println(str7);
+        System.out.println("str7:" + str7);
 
         /**
          * 7.public char[] toCharArray():将字符串转换成char类型数组
-         * 8.public byte[] getByte():转换成底层byte类型数组
+         * 8.public byte[] getByte():转换成底层byte类型数组,返回字符ASCII码表值
          * 9.public String replace(charSequence oldString,charSequence newString)：出现的第一个参数，替换成第二个参数
          */
         String str8 = "HelloWorld";
@@ -56,7 +57,7 @@ public class Demo02StringObject {
         System.out.println(chars[0]);
         byte[] bytes = str8.getBytes();
         for (int i = 0; i < bytes.length; i++) {
-            System.out.println(bytes[i]);
+            System.out.println("bytes[]:" + bytes[i]);
         }
         String lang1 = str8.replace("llo", "qqq");
         System.out.println(lang1);
