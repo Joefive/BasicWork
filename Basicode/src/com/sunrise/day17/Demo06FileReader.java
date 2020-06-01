@@ -14,7 +14,7 @@ import java.io.IOException;
  * 步骤：1.创建FileReader对象；2.使用read()方法读取文件；3.释放资源；
  */
 
-public class Demo06Reader {
+public class Demo06FileReader {
     public static void main(String[] args) throws IOException {
         //字节流读取中文问题
         FileInputStream fis = new FileInputStream("E:\\BAK\\b.txt");
