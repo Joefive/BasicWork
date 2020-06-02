@@ -16,13 +16,14 @@ public class Demo05FileCopy {
             fos.write(len);
         }
         System.out.println("===================");
-        fileCopy("E:\\迅雷下载\\text\\1.mp4", "E:\\BAK\\1.mp4");
+        fileCopy("E:\\迅雷下载\\text\\2.mp4", "E:\\BAK\\2.mp4");
         //资源释放，先关闭写入进程，再关闭读取进程；
         fos.close();
         fis.close();
     }
 
     private static void fileCopy(String fromPath, String disPath) throws IOException {
+        long s = System.currentTimeMillis();
         FileInputStream fis = new FileInputStream(fromPath);
         FileOutputStream fos = new FileOutputStream(disPath);
         byte[] bytes = new byte[1024 * 512];
@@ -32,5 +33,7 @@ public class Demo05FileCopy {
         }
         fos.close();
         fis.close();
+        long e = System.currentTimeMillis();
+        System.out.println("文件复制耗时：" + (e - s) + "毫秒");
     }
 }
