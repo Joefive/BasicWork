@@ -1,7 +1,5 @@
 package com.sunrise.day15.Ticket;
 
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
-
 /**
  * 线程安全问题：同步代码块，使用synchronized关键字对线程加锁，保证只有一个线程在同步代码块中执行。
  * 注意：1.锁对象可以是任意类型；2.必须要保证多个线程使用的是同一个锁对象；
