@@ -38,7 +38,6 @@ public class TCPClient {
             //5.使用网络字节输出流OutputStream对象中的方法write,把读取到的文件上传到服务器
             os.write(bytes,0,len);
         }
-
         /*
             解决:上传完文件,给服务器写一个结束标记
             void shutdownOutput() 禁用此套接字的输出流。
