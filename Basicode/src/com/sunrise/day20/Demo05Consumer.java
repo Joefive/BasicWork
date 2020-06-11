@@ -25,6 +25,11 @@ public class Demo05Consumer {
         consumer.accept(name);
     }
 
+    /**
+     * 将传入字符串反序排列
+     * @param str
+     * @param consumer
+     */
     public static void reverse(String str, Consumer<String> consumer){
         consumer.accept(str);
     }
