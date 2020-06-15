@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 /**
  * 流式模型JDK8以后，和字节流字符流不一样！
+ * 管道流，只能被消费一次
  */
 
 public class Demo02Stream {
