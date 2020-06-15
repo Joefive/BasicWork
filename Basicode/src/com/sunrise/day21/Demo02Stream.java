@@ -2,6 +2,10 @@ package com.sunrise.day21;
 
 import java.util.ArrayList;
 
+/**
+ * 流式模型JDK8以后，和字节流字符流不一样！
+ */
+
 public class Demo02Stream {
     public static void main(String[] args) {
         ArrayList<String> list = new ArrayList<>();
