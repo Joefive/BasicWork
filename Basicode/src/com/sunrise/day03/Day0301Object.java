@@ -15,8 +15,8 @@ public class Day0301Object {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5};
         System.out.println(Arrays.toString(arr));
-        Util ut = new Util();
-        ut.printArray(arr);
+        //Util ut = new Util();
+        Util.printArray(arr);
 
         Day0302Student stu = new Day0302Student();
         stu.eat();

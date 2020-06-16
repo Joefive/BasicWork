@@ -16,14 +16,14 @@ public class Demo {
         show(new Demo01FunctionalInterface() {
             @Override
             public void myMethod() {
-                System.out.println("System : Override myMethod Function...!");
+                System.out.println("System1 : Override myMethod Function...!");
             }
         });
         //使用lambda表达式
         show(() -> {
-            System.out.println("System : Override myMethod Function with Lambda!");
+            System.out.println("System2 : Override myMethod Function with Lambda!");
         });
         //简化lambda表示
-        show(() -> System.out.println("System : Override myMethod Function with Simplification Lambda!"));
+        show(() -> System.out.println("System3 : Override myMethod Function with Simplification Lambda!"));
     }
 }
