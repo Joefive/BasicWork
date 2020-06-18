@@ -15,6 +15,7 @@ public class Man {
         /*marry(()->{
             this.buyHouse();
         });*/
+        //用this来应用本类的成员方法
         marry(this::buyHouse);
     }
 
